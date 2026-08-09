@@ -248,3 +248,253 @@ body {
 .contato-simples a:hover {
   background: #00e5ff;
 }
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  background-color: #f4f4f0;
+}
+
+.cabecalho {
+  background-color: #ffe600;
+  border-bottom: 4px solid #111111;
+  padding: 30px 20px;
+  width: 100%;
+}
+
+.cabecalho-conteudo {
+  max-width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.titulo-principal {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #111111;
+  line-height: 1.2;
+}
+
+.navegacao-principal ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  list-style: none;
+}
+
+.navegacao-principal a {
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 0.875rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111111;
+  background-color: #ffffff;
+  border: 3px solid #111111;
+  box-shadow: 3px 3px 0px #111111;
+}
+
+.navegacao-principal a:hover,
+.botao-acao:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #111111;
+  transition: all 0.15s ease-in-out;
+}
+
+.secao-destaque {
+  background-color: #ffffff;
+  border-bottom: 4px solid #111111;
+  padding: 50px 20px;
+}
+
+.painel-destaque {
+  max-width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .painel-destaque {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.conteudo-destaque {
+  flex: 1;
+}
+
+.conteudo-destaque h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #111111;
+  line-height: 1.2;
+}
+
+.conteudo-destaque p {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #444444;
+  line-height: 1.6;
+}
+
+.botao-acao {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111111;
+  background-color: #00e5ff;
+  border: 3px solid #111111;
+  box-shadow: 4px 4px 0px #111111;
+}
+
+.imagem-destaque {
+  flex: 1;
+  width: 100%;
+}
+
+.imagem-destaque img {
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  object-fit: cover;
+  display: block;
+  border: 4px solid #111111;
+  box-shadow: 5px 5px 0px #111111;
+}
+
+.secao-interna {
+  background-color: #f4f4f0;
+  padding: 50px 20px;
+}
+
+.conteudo-pagina {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.grade-projeto {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  align-items: stretch;
+}
+
+@media (min-width: 900px) {
+  .grade-projeto {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cartao-projeto {
+  background-color: #ffffff;
+  border: 4px solid #111111;
+  box-shadow: 5px 5px 0px #111111;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cartao-projeto h3 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #111111;
+}
+
+.topico-projeto h4 {
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: #111111;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.topico-projeto p {
+  font-size: 0.875rem;
+  color: #333333;
+  line-height: 1.5;
+}
+
+.cartao-vazio {
+  min-height: 300px;
+}
+
+.conteudo-vazio {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #111111;
+  padding: 20px;
+  text-align: center;
+  background-color: #f4f4f0;
+}
+
+.conteudo-vazio p {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #666666;
+  text-transform: uppercase;
+}
+
+.contato-simples {
+  background: #ffe600;
+  border: 4px solid #111;
+  box-shadow: 5px 5px 0 #111;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: system-ui, sans-serif;
+}
+
+.contato-simples h2 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.contato-simples p {
+  font-size: 0.95rem;
+  color: #111;
+  margin: 8px 0;
+}
+
+.contato-simples a {
+  color: #111;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.contato-simples a:hover {
+  background: #00e5ff;
+}
