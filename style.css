@@ -43,6 +43,15 @@ body {
   line-height: 1.2;
 }
 
+.titulo-principal-conteudo-pagina {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #111111;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .navegacao-principal ul {
   display: flex;
   flex-wrap: wrap;
