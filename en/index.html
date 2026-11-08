@@ -41,16 +41,20 @@
       </div>
 
       <div class="imagem-destaque">
-        <div class="carrossel-wrapper">
-          <div class="carrossel-item">
-            <img src="../assets/img/projeto-integrador-jpg1.jpg" alt="Illustration of hands joining in a sign of respect and equality">
+        <div class="carrossel" role="region" aria-label="Image carousel">
+          <div class="carrossel-wrapper">
+            <div class="carrossel-item" role="group" aria-roledescription="slide" aria-label="1 of 3">
+              <img src="../assets/img/projeto-integrador-1.jpg" alt="Integrative project image 1">
+            </div>
+            <div class="carrossel-item" role="group" aria-roledescription="slide" aria-label="2 of 3">
+              <img src="../assets/img/projeto-integrador-2.png" alt="Integrative project image 2">
+            </div>
+            <div class="carrossel-item" role="group" aria-roledescription="slide" aria-label="3 of 3">
+              <img src="../assets/img/projeto-integrador-3.png" alt="Integrative project image 3">
+            </div>
           </div>
-          <div class="carrossel-item">
-            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=800&auto=format&fit=crop" alt="Carousel Image 2">
-          </div>
-          <div class="carrossel-item">
-            <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?q=80&w=800&auto=format&fit=crop" alt="Carousel Image 3">
-          </div>
+          <button class="carrossel-controle carrossel-anterior" type="button" aria-label="Previous image" data-direcao="-1">‹</button>
+          <button class="carrossel-controle carrossel-proximo" type="button" aria-label="Next image" data-direcao="1">›</button>
         </div>
       </div>
 
